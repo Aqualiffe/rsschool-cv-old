@@ -44,44 +44,17 @@ activeSlide(index);
 activeDot(index);
 }
 
-const nextSlide = () => {
-if(index == slides.length - 1) {
-  index = 0;
-  prepareCurrentSlide(index);
-}else {
-  index++;
-  prepareCurrentSlide(index);
-}
-}
-
-const prevSlide = () => {
-if(index == 0) {
-  index = slides.length - 1;
-  prepareCurrentSlide(index);
-}else {
-  index--;
-  prepareCurrentSlide(index);
-}
-}
-
-dots.forEach((item, indexDot)=> {
-item.addEventListener('click', () => {
-  index = indexDot;
-  prepareCurrentSlide(index);
-})
-})
-next.addEventListener('click', nextSlide);
-prev.addEventListener('click', prevSlide);
-const interval = setInterval(nextSlide, 2000);
 
 ```
 
 ## Experience
 * [portfolio fl.ru](https://www.fl.ru/users/alberta/portfolio/)
+
 ## Education
 * N. I. Lobachevsky State University of Nizhny Novgorod, VMK
 * WayUP "Web layout designer: getting started"
 * JavaScript Manual on learnjavascript.ru (in progress)
 * RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+
 ## Languages
 * English - Intermediate/Upper-intermediate
